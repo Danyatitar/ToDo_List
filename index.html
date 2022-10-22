@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="animate__animated animate__fadeInDown">
+        <h1 class="title">ToDo List</h1>
+        <form class="form" action="">
+          <input
+            type="text"
+            placeholder="What do you have planned?"
+            class="task-input"
+          />
+          <input type="submit" class="task-add" value="Add task" />
+        </form>
+        <p class="error hidden">You didn't write anything at the task input!</p>
+      </header>
+      <main class="main">
+        <h2 class="task-title animate__animated animate__fadeInUp">Tasks</h2>
+        <select
+          name="select"
+          class="animate__animated animate__fadeInUp select"
+          id="select"
+        >
+          <option value="all" selected>All tasks</option>
+          <option value="completed">Completed tasks</option>
+          <option value="not-completed">Not comleted tasks</option>
+        </select>
+        <div class="task-list">
+          <!-- <div class="task-content">
+            <div class="task-status">
+              <span class="status"></span>
+              <input
+                type="text"
+                class="task"
+                value="wegtrhtj"
+                readonly
+              ></input>
+            </div>
+          
+            <div class="buttons">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div> -->
+        </div>
+      </main>
+      <footer class="footer animate__animated animate__fadeInUp">
+        <div class="task-info">
+          <p>Completed tasks <span class="completed-tasks">0</span></p>
+          <p>Tasks left <span class="tasks-left">0</span></p>
+        </div>
+        <button class="delete-all">Delete all tasks</button>
+      </footer>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
